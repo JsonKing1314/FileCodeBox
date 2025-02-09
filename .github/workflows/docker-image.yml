@@ -32,8 +32,8 @@ jobs:
       - name: Login to DockerHub
         uses: docker/login-action@v2
         with:
-          username: shzx
-          password: zx204$$$$
+          username: xunzhaopdj
+          password: Pdj621123
       
       - name: Build and push
         uses: docker/build-push-action@v4
@@ -41,7 +41,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: shzx/filecodebox:beta
+          tags: xunzhaopdj/filecodebox:beta
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
       - name: Move cache
